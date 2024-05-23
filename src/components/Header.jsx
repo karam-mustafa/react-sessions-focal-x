@@ -1,32 +1,62 @@
+import Carousel from "react-bootstrap/Carousel";
+
 export default function Header() {
   return (
-    <div
-      style={{
-        backgroundImage: "url(https://via.placeholder.com/1200x400)",
-        height: "400px",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        display: "flex",
-        alignItems: "center",
-        justifyContent: "center",
-        width: "100%",
-        textAlign: "center",
-        padding: "0 20px",
-        boxSizing: "border-box",
-      }}
-    >
-      <h1
+    <Carousel>
+      <Carousel.Item
+        className="w-100"
         style={{
-          color: "#fff",
-          fontSize: "48px",
-          backgroundColor: "rgba(0, 0, 0, 0.5)",
-          padding: "10px 20px",
-          borderRadius: "8px",
-          maxWidth: "90%",
+          height: "100vh",
         }}
       >
-        Welcome to Our Services
-      </h1>
-    </div>
+        <img
+          className="w-100"
+          style={{
+            height: "100vh",
+          }}
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoGE1H-nI97uYBMtjrJDxoPTpcC92EiP_MC8c38gV_Je7E1GaZIp2SjbZQTCPXMnEDI4k&usqp=CAU"
+        />
+        <Carousel.Caption>
+          <h3>First slide label</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item
+        className="w-100"
+        style={{
+          height: "100vh",
+        }}
+      >
+        <img
+          className="w-100"
+          style={{
+            height: "100vh",
+          }}
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoGE1H-nI97uYBMtjrJDxoPTpcC92EiP_MC8c38gV_Je7E1GaZIp2SjbZQTCPXMnEDI4k&usqp=CAU"
+        />
+        <Carousel.Caption>
+          <h3>First slide label</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+      <Carousel.Item
+        className="w-100"
+        style={{
+          height: "100vh",
+        }}
+      >
+        <img
+          className="w-100"
+          style={{
+            height: "100vh",
+          }}
+          src="https://encrypted-tbn0.gstatic.com/images?q=tbn:ANd9GcSoGE1H-nI97uYBMtjrJDxoPTpcC92EiP_MC8c38gV_Je7E1GaZIp2SjbZQTCPXMnEDI4k&usqp=CAU"
+        />
+        <Carousel.Caption>
+          <h3>First slide label</h3>
+          <p>Nulla vitae elit libero, a pharetra augue mollis interdum.</p>
+        </Carousel.Caption>
+      </Carousel.Item>
+    </Carousel>
   );
 }
